@@ -1,0 +1,19 @@
+<div class="cont1">
+    <h1>User-List</h1>
+
+    <div class="card1" *ngFor="let element of arrayUser">
+        <div (mouseover)="showElement=true" (mouseout)="showElement=false">
+
+
+
+            <span [hidden]="!showElement">
+                <p>{{element.name}}</p>
+                <p>{{element.race}}</p>
+                <p>{{element.date}}</p>
+            </span>
+            <span [hidden]="showElement">
+                <img [src]="[element.photo]" alt="photo du chat"></span>
+        </div>
+
+    </div>
+</div>

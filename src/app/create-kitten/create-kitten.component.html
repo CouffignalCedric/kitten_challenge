@@ -1,0 +1,29 @@
+
+<div class="container">
+<h1>Ajouter un Chat a l'adoption</h1>
+<form >
+
+    <fieldset>
+        <label for="name">Nom du chat</label>
+        <input id="name" name="name" type="text" required [(ngModel)]="name">
+    </fieldset>
+
+    <fieldset>
+        <label for="race">Race</label>
+        <input id="race" name="race" required [(ngModel)]="race">
+    </fieldset>
+
+    <fieldset>
+        <label for="date">Date de Naissance</label>
+        <input type="date" name="date" required [(ngModel)]="date">
+    </fieldset>
+    <fieldset>
+        <label for="chat-select">photo</label>
+        <input type="chat" name="chat"placeholder="Entrez URL d'image" required>
+    </fieldset>
+    <div>
+        <button type="reset">Restaurer</button>
+        <button (click)="createKitten()">Creer Chat</button>
+    </div>
+</form>
+</div>

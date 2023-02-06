@@ -1,0 +1,11 @@
+<div class="cont">
+  <h1>Liste de chat</h1>
+
+  <div class="card" *ngFor="let element of arrayChat; let index = index">
+    <p>{{element.name}}</p>
+    <p>{{element.race}}</p>
+    <p>{{element.date}}</p>
+    <img [src]="[element.photo]" alt="photo du chat">
+    <button (click)="adoptCat(element, index)">Adopter</button>
+  </div>
+</div>

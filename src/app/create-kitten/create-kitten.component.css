@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: pink;
+    background-color: darkolivegreen;
+}
+button{
+    width: 150px;
+    height: 50px;
+    border: 2px solid;
+    margin: 10px;
+    border-radius: 225px;
+}
